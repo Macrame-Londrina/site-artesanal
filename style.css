@@ -17,6 +17,12 @@
 
 *{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
+body {
+  background-image: url("fundo.jpg");
+  background-size: cover;      /* cobre a tela inteira */
+  background-position: center; /* centraliza */
+  background-repeat: no-repeat;/* não repete */
+}
 body{
   margin: 0;
   color: var(--ink);
@@ -190,10 +196,4 @@ body{
 @media (max-width: 900px){
   .hero__grid, .about{ grid-template-columns: 1fr; }
   .hero{ padding-top: 36px; }
-}
-body {
-  background-image: url("fundo.jpg");
-  background-size: cover;      /* cobre a tela inteira */
-  background-position: center; /* centraliza */
-  background-repeat: no-repeat;/* não repete */
 }
