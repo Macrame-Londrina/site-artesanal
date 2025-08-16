@@ -1,65 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Macramê Londrina</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-  <link rel="stylesheet" href="style.css">
 <body>
-  <header>
-    <h1>Macramê Londrina</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#produtos">Produtos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="#hero">Macramê Londrina</a>
+      <nav class="nav">
+        <a href="#galeria">Produtos</a>
+        <a href="#historia">Nossa história</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="hero">
-    <h2>Peças únicas feitas à mão</h2>
-    <p>Artesanato feito a mão, com amor e dedicação</p>
-    <a href="#produtos" class="botao">Ver produtos</a>
-  </section>
-
-  <section id="sobre">
-    <h2>Sobre mim</h2>
-    <p>O Macramê Londrina é fruto de uma história de família. Inspiradas pela avó e pela mãe, que transformaram fios em arte, duas irmãs
-      decidiram dar continuidade a essa tradição. Cada criaçao carrega essa história com amor, memória e criatividade feitos a mão.</p>
-  </section>
-
-  <section id="produtos">
-    <h2>Meus Produtos</h2>
-    <div class="galeria">
-      <div class="produto">
-        <img src="https://via.placeholder.com/200" alt="Produto artesanal">
-        <h3>Produto 1</h3>
-        <p>Descrição breve do produto.</p>
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <h1>Peças únicas feitas à mão</h1>
+        <p>Macramê autoral em tons naturais, criado com carinho e cuidado em cada nó.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#galeria">Ver produtos</a>
+          <a class="btn btn--ghost" href="#historia">Conheça nossa história</a>
+        </div>
       </div>
-      <div class="produto">
-        <img src="https://via.placeholder.com/200" alt="Produto artesanal">
-        <h3>Produto 2</h3>
-        <p>Descrição breve do produto.</p>
-      </div>
-      <div class="produto">
-        <img src="https://via.placeholder.com/200" alt="Produto artesanal">
-        <h3>Produto 3</h3>
-        <p>Descrição breve do produto.</p>
+      <div class="hero__photo">
+        <!-- Troque pela sua imagem principal -->
+        <img src="imagens/hero.jpg" alt="Peça de macramê artesanal em tons naturais" />
       </div>
     </div>
   </section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Quer encomendar ou saber mais?</p>
-    <p>📱 WhatsApp: <a href="https://wa.me/43999576181">Clique aqui</a></p>
-    <p>📷 Instagram: <a href="https://instagram.com/macramelondrina">@macramelondrina</a></p>
-    <p>✉️ Email: <a href="mailto:macramecaclau@email.com">macramecaclau@email.com</a></p>
+  <!-- GALERIA / PRODUTOS -->
+  <section id="galeria" class="section">
+    <div class="container">
+      <h2 class="section__title">Produtos</h2>
+      <p class="section__subtitle">Seleção em estoque e sob encomenda.</p>
+
+      <div class="grid">
+        <!-- Duplicar este bloco para mais produtos -->
+        <article class="card">
+          <img src="imagens/produto1.jpg" alt="Suporte de plantas em macramê" />
+          <div class="card__body">
+            <h3>Suporte de Plantas</h3>
+            <p>Algodão natural. Tamanho personalizável.</p>
+            <!-- opcional: <strong>R$ 89</strong> -->
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imagens/produto2.jpg" alt="Painel decorativo em macramê" />
+          <div class="card__body">
+            <h3>Painel de Parede</h3>
+            <p>Texturas suaves em tom cru.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imagens/produto3.jpg" alt="Chaveiro de macramê" />
+          <div class="card__body">
+            <h3>Chaveiro Artesanal</h3>
+            <p>Presente delicado para o dia a dia.</p>
+          </div>
+        </article>
+        <!-- fim dos exemplos -->
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Macramê Londrina. Feito com ❤</p>
+  <!-- HISTÓRIA -->
+  <section id="historia" class="section section--alt">
+    <div class="container about">
+      <div class="about__media">
+        <img src="imagens/historia.jpg" alt="Detalhe de nós de macramê em algodão cru" />
+      </div>
+      <div class="about__copy">
+        <h2 class="section__title">Nossa história</h2>
+        <p>
+          O Macramê Londrina é fruto de uma história de família. Inspiradas pela avó e pela mãe, que transformaram fios em arte, duas irmãs
+      decidiram dar continuidade a essa tradição. Cada criaçao carrega essa história com amor, memória e criatividade feitos a mão. Carregamos 
+          essa herança com orgulho e transformamos fios em peças únicas, em tons naturais e acabamento cuidadoso. 
+        </p>
+        <p>
+          Produzimos sob encomenda e também lançamos coleções exclusivas. Cada nó é pensado para levar aconchego
+          e beleza.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section">
+    <div class="container">
+      <h2 class="section__title">Contato</h2>
+      <div class="contact">
+        <a class="btn btn--primary" href="https://wa.me/55SEU_NUMERO" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <a class="btn btn--ghost" href="https://instagram.com/macramelondrina" target="_blank" rel="noopener">@macramelondrina</a>
+        <!-- opcional: <a class="link" href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a> -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <small>© 2025 Macramê Londrina — Feito à mão em Londrina</small>
+      <small><a href="#hero">Voltar ao topo</a></small>
+    </div>
   </footer>
 </body>
 </html>
